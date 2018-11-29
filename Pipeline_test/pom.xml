@@ -105,7 +105,7 @@
       <wl.targets>AdminServer</wl.targets>
 	  <wl.repository>POC_1</wl.repository>
 	  <wl.source>Pipeline_test</wl.source>
-      <wl.location>target</wl.location>
+      <wl.location>Pipeline_test\target</wl.location>
       <wl.user>weblogic</wl.user>
       <wl.pass>weblogic123</wl.pass>
   </properties>
