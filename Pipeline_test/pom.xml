@@ -100,14 +100,14 @@
     </profiles>
   
   <properties>
-      <wl.host>localhost</wl.host>
-      <wl.port>9001</wl.port>
+      <wl.host>itmplxdev1</wl.host>
+      <wl.port>7100</wl.port>
       <wl.targets>AdminServer</wl.targets>
 	  <wl.repository>POC_1</wl.repository>
 	  <wl.source>Pipeline_test</wl.source>
       <wl.location>Pipeline_test\target</wl.location>
-      <wl.user>weblogic</wl.user>
-      <wl.pass>weblogic123</wl.pass>
+      <wl.user>s286103</wl.user>
+      <wl.pass>aG0p1en2d4p</wl.pass>
   </properties>
 	
 	
