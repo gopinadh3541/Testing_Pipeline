@@ -5,26 +5,24 @@ node{
     }
     stage('Clean')
     {
-		withMaven(maven: 'ECD Maven 3.3.9 Linux')
-		{
+	
         sh "mvn -f Pipeline_test/pom.xml clean"
-		}
+	
     }
     stage('Unit Test')
     {
-		withMaven(maven: 'ECD Maven 3.3.9 Linux')
-		{
+		
+		
 		sh "mvn -f Pipeline_test/pom.xml test"
-		}
+		
     }
    
    
     stage('Packaging')
     {
-        withMaven(maven: 'ECD Maven 3.3.9 Linux')
-		{
+        
 		sh "mvn -f Pipeline_test/pom.xml test"
-		}
+	
     }
    stage('Deploy?')
     {
@@ -33,11 +31,10 @@ node{
    stage('Deploy')
    {
    
-	withMaven(maven: 'ECD Maven 3.3.9 Linux')
-	{
+	
 		//sh "mvn -f Pipeline_test/pom.xml deploy"
 		sh "mvn -f Pipeline_test/pom.xml package -Ddeploy.to.weblogic -Ddeploy.for.weblogic"
-	}
+	
    
      // bat 'mvn package -Ddeploy.to.weblogic -Ddeploy.for.weblogic'
    }
