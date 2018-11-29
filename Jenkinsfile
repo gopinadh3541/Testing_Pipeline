@@ -1,4 +1,4 @@
-node{
+node('master'){
    stage('Checkout')
     {
         checkout scm
@@ -6,14 +6,14 @@ node{
     stage('Clean')
     {
 	
-        sh "mvn -f Pipeline_test/pom.xml clean"
+        bat "mvn -f Pipeline_test/pom.xml clean"
 	
     }
     stage('Unit Test')
     {
 		
 		
-		sh "mvn -f Pipeline_test/pom.xml test"
+		bat "mvn -f Pipeline_test/pom.xml test"
 		
     }
    
@@ -21,7 +21,7 @@ node{
     stage('Packaging')
     {
         
-		sh "mvn -f Pipeline_test/pom.xml test"
+		bat "mvn -f Pipeline_test/pom.xml test"
 	
     }
    stage('Deploy?')
@@ -33,7 +33,7 @@ node{
    
 	
 		//sh "mvn -f Pipeline_test/pom.xml deploy"
-		sh "mvn -f Pipeline_test/pom.xml package -Ddeploy.to.weblogic -Ddeploy.for.weblogic"
+		bat "mvn -f Pipeline_test/pom.xml package -Ddeploy.to.weblogic -Ddeploy.for.weblogic"
 	
    
      // bat 'mvn package -Ddeploy.to.weblogic -Ddeploy.for.weblogic'
