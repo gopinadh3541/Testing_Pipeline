@@ -90,12 +90,12 @@ public class BankApplication extends HttpServlet {
 
 		if (uname.equals(pwd) && uname != "") {
 			
-			System.out.println("Password is: "+pwd);
+			/*System.out.println("Password is: "+pwd);
 			byte[] encrypt =Base64.getEncoder().encode(pwd.getBytes());
 			System.out.println("Encrypted text is: "+ new String(encrypt));
 			
 			byte[] decrypt=Base64.getDecoder().decode(encrypt);
-			System.out.println("Decrypted text is: "+ new String(decrypt));
+			System.out.println("Decrypted text is: "+ new String(decrypt));*/
 			
 			
 			
