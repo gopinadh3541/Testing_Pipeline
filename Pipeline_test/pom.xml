@@ -64,7 +64,7 @@
                             <adminurl>t3://${wl.host}:${wl.port}</adminurl>
                             <targets>${wl.targets}</targets>
                             <user>${wl.user}</user>
-                            <password>${wl.pass}</password>
+                            <password>${wl.password}</password>
                             <upload>true</upload>
                             <remote>true</remote>
                             <verbose>true</verbose>
@@ -106,8 +106,7 @@
 	  <wl.repository>POC_1</wl.repository>
 	  <wl.source>Pipeline_test</wl.source>
       <wl.location>Pipeline_test\target</wl.location>
-      <wl.user>weblogic</wl.user>
-      <wl.pass>weblogic123</wl.pass>
+     
   </properties>
 	
 	
