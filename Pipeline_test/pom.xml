@@ -10,10 +10,7 @@
 	
 	
 <distributionManagement>
-   <relocation>
-      <groupId>com.aep</groupId>
-      <artifactId>BankExample</artifactId>
-    </relocation>
+
 	
 	<repository>
       <id>aep-release</id>
@@ -26,6 +23,11 @@
       <url>http://abci-prod:8082/nexus/content/repositories/snapshots/</url>
 	    
     </snapshotRepository>
+	
+	   <relocation>
+      <groupId>com.aep</groupId>
+      <artifactId>BankExample</artifactId>
+    </relocation>
   </distributionManagement> 
 
 	
