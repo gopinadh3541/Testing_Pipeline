@@ -81,7 +81,7 @@
                                     <action>deploy</action>
                                     <!--<source>*/*.war</source>-->
 		<!--<source>C:/jenkins_installpath/workspace/Bank_appl1/target/BankExample.war    ./${wl.location}/${project.artifactId}</source>-->
-		<source>./${wl.location}/${project.artifactId}/${prefix}.war</source>
+		<source>./${wl.location}/${project.artifactId}${prefix}.war</source>
                                 </configuration>
                             </execution>
                         </executions>
