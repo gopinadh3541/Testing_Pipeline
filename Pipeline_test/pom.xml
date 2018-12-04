@@ -81,7 +81,7 @@
                                     <action>deploy</action>
                                     <!--<source>*/*.war</source>-->
 		<!--<source>C:/jenkins_installpath/workspace/Bank_appl1/target/BankExample.war    ./${wl.location}/${project.artifactId}</source>-->
-		<source>./${wl.location}/${project.artifactId}-*.war</source>
+		<source>./${wl.location}/${project.artifactId}/${prefix}.war</source>
                                 </configuration>
                             </execution>
                         </executions>
@@ -106,7 +106,7 @@
 	  <wl.repository>POC_1</wl.repository>
 	  <wl.source>Pipeline_test</wl.source>
       <wl.location>http://abci-prod:8082/nexus/content/repositories/snapshots/</wl.location>
-     
+	  <prefix>-*</prefix>
   </properties>
 	
 	
