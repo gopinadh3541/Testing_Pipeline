@@ -24,10 +24,7 @@
 	    
     </snapshotRepository>
 	
-	   <relocation>
-      <groupId>com.aep</groupId>
-      <artifactId>BankExample</artifactId>
-    </relocation>
+	
   </distributionManagement> 
 
 	
