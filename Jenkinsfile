@@ -21,7 +21,7 @@ node('master'){
     stage('Packaging')
     {
         
-		bat "mvn -f Pipeline_test/pom.xml test"
+		bat "mvn -f Pipeline_test/pom.xml install"
 	
     }
    stage('Deploy?')
@@ -32,7 +32,7 @@ node('master'){
    {
    
 	
-		//sh "mvn -f Pipeline_test/pom.xml deploy"
+		sh "mvn -f Pipeline_test/pom.xml deploy"
 	   withCredentials([usernamePassword(credentialsId: 'By_Login', passwordVariable: 'wl.password', usernameVariable: 'wl.user')]) {
 		bat "mvn -f Pipeline_test/pom.xml package -Ddeploy.to.weblogic -Ddeploy.for.weblogic"
 	   }
