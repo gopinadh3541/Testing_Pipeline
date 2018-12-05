@@ -13,14 +13,14 @@
 
 	
 	<repository>
-      <id>aep-release</id>
-      <name>AEP Release</name>
-      <url>http://abci-prod:8082/nexus/content/repositories/releases/</url>
+      <id>maven-release</id>
+      <name>Maven Release</name>
+      <url>http://localhost:8081/repository/maven-releases/</url>
     </repository>
     <snapshotRepository>
-      <id>aep-snapshot</id>
-      <name>AEP Snapshot</name>
-      <url>http://abci-prod:8082/nexus/content/repositories/snapshots/</url>
+      <id>maven-snapshot</id>
+      <name>Maven Snapshot</name>
+      <url>http://localhost:8081/repository/maven-snapshots/</url>
 	    
     </snapshotRepository>
 	
